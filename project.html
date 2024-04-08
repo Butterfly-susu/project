@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluvial still water</title>
+
+  <style>
+    h1 {
+      text-align: center;
+      color: #0e47a1;
+    }
+
+    h2 {
+      text-align: center;
+      border: 1px solid royalblue;
+      border-radius: 4px;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: thin;
+      color: #01040a;
+    }
+
+    p {
+      color: #01040a;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      margin: 20px auto;
+      background-color: #0e47a1;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    .info {
+      font-size: 20px;
+      line-height: 1.5;
+      display: block;
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 16px 24px;
+      font-size: 16px;
+      color: white;
+      background-color: #0e47a1;
+      border: 1px solid #1a64d6;
+      border-radius: 30px;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      transition: all 200ms ease;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #0e47a1;
+      cursor: pointer;
+    }
+
+    body {
+      background-color: #fff;
+
+      padding: 5px;
+      font-size: 20px;
+      margin: 0 auto;
+      display: block;
+      unicode-bidi: isolate;
+
+    }
+
+
+    .Instapage {
+      text-decoration: none;
+      padding: 30px auto;
+      margin-top: 20px;
+      color: #0e47a1;
+      font-size: medium;
+    }
+
+    .myself {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      background-image: linear-gradient(to top, #0c6896 0%, #B9DFF2 100%);
+      border-radius: 10px;
+      color: #fff;
+      width: 50%;
+      padding: 30px;
+      margin: 30px auto;
+
+    }
+
+
+    .footer {
+      text-align: center;
+      font-weight: lighter;
+      font-size: small;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Fluvial Still Water</h1>
+
+    <h2>
+      Our Product
+    </h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/122/original/WhatsApp_Image_2024-03-29_at_11.09.17_PM.jpeg?1711746808" />
+
+    <hr />
+    <p class="info">
+      Let me introduce you to a newly emerged product <strong>Fluvial Still Water</strong>, a
+      game-changer in hydration. Fluvial comes in three different types still
+      water, flavoured water, and sparkling water. <br>
+      We also give you the option to customise the pH you prefer in your water Please go and follow
+      @official_fluvialwater on instagram. If you want to place orders or enquire about the product send a message to
+      067 669 1343 or
+      velesolutions1@gmail.com Join us on our journey to elevate your hydration experience.
+      Tell a friend to tell a friend that the future of pure hydration product is here.
+      <br />
+      <a href="https://www.instagram.com/official_fluvialwater?igsh=MXl1c3djN3cybGlu" target="_blank"
+        alt="Instagram link" class="Instapage">
+        Visit our instagram page </a>
+    </p>
+
+    <button>Place an Order</button>
+
+    <p class="footer"> <em> This page was built by </em> <a
+        href="https://www.instagram.com/butterfly_susu/?igsh=ZWVvaTRubmVyMmMx&utm_source=qr" target="_blank"
+        class="myself"> <em>Shudufhadzo</em> </a>
+    </p>
+    <script>
+      function enquireNow() {
+        let name = prompt("What is your name?");
+        let number = prompt(" How many bottles do you want?");
+
+        if (number < 12) {
+          alert(" Sorry" + " " + name + " " + "You cannot order less than 12 bottles 😌 ");
+        } else {
+          if (number >= 12) {
+            alert("Thanks" + " " + name + " We have received your order 😊❤️️ ");
+          }
+
+        }
+      }
+      let enquireButton = document.querySelector("button");
+      enquireButton.addEventListener("click", enquireNow);
+    </script>
+  </div>
+</body>
+
+</html>
